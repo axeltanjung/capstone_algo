@@ -18,24 +18,22 @@ It connects upstream geological features with downstream processing performance 
 
 ## 2. Project Structure
 
-Intelligent_Ore_Quality_Throughput_Forecasting_System
-│
-├── data/
-│ ├── ore_samples.csv
-│ ├── daily_ore_proportion.csv
-│ ├── mill_tonnage_daily.csv
-│
-├── notebooks/
-│ ├── 01_ore_type_classification.ipynb
-│ ├── 02_ore_composition_prophet.ipynb
-│ ├── 03_mill_tonnage_forecast_prophet.ipynb
-│
-├── models/
-│ ├── best_model_random_forest.pkl
-│ ├── prophet_mixed_model.pkl
-│ ├── prophet_tonnage_model.pkl
-│
-└── README.md
+**Folder layout:**
+
+- `data/`
+  - `ore_type_data.csv` — Raw ore sample characteristics (Mixed, Oxide, Sulphide)
+  - `simulated_tonage.csv` — Daily mill throughput / tonnage
+
+- `notebooks/`
+  - `ore_type_classification_and_tonnage_forecasting.ipynb` — ML pipeline: Random Forest, Decision Tree and Time Series Forcaseting
+
+- `models/`
+  - `best_model_random_forest.pkl` — Trained ore type classification model
+  - `best_model_knn.pkl` — Trained ore type classification model
+  - `best_model_logistic_regression.pkl` — Trained ore type classification model
+  - `best_model_decision_tree.pkl` — Trained ore type classification model
+
+- `README.md` — Project documentation
 
 ---
 
@@ -59,7 +57,7 @@ Predict ore type (`Mixed`, `Oxide`, `Sulphide`) from geological and chemical fea
 | **Target:** `ore_type_label` | Classified ore type |
 
 ### Models Tested
-- Random Forest ✅ (best performing)
+**- Random Forest ✅ (best performing)**
 - Decision Tree
 - Logistic Regression
 - XGBoost
@@ -227,3 +225,4 @@ It provides a framework for **data-driven decision-making** across the mine-to-m
 
 **Axel Ivanda Tanjung**
 *Data Scientist — Data Scientist*
+

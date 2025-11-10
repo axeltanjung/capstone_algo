@@ -91,7 +91,7 @@ m = Prophet(
 m.add_regressor('oxide_lag1')
 m.add_regressor('sulphide_lag1')
 m.add_seasonality(name='weekly', period=7, fourier_order=3)
-m.add_seasonality(name='yearly', period=365.25, fourier_order=8)
+m.add_seasonality(name='yearly', period=365, fourier_order=8)
 ```
 
 ### Insights Captured
@@ -99,7 +99,6 @@ m.add_seasonality(name='yearly', period=365.25, fourier_order=8)
 * **Trend:** Long-term compositional drift (e.g., oxide ore declining over time).
 * **Seasonality:** Operational cycles or weekly mining routines.
 * **Holiday Effects:** Maintenance shutdowns or production pauses.
-* **Lagged Influence:** Past oxide/sulphide ratios affecting future mixed proportions.
 
 ### Metrics
 
@@ -225,4 +224,5 @@ It provides a framework for **data-driven decision-making** across the mine-to-m
 
 **Axel Ivanda Tanjung**
 *Data Scientist — Data Scientist*
+
 

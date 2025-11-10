@@ -155,27 +155,13 @@ Forecasting mill tonnage helps operations:
 
 ---
 
-## 6. Results & Figures (Placeholder)
-
-This section is intended to visually display the model performance and forecasts.
-
-| Figure | Description | File/Placeholder |
-| :--- | :--- | :--- |
-| Ore Classification | Confusion Matrix and Feature Importance | `ore_classification_metrics.png` |
-| Composition Forecast | Predicted vs. Actual Daily Ore Proportions | `ore_composition_forecast.png` |
-| Tonnage Forecast | 14-Day Ahead Tonnage Projection with Uncertainty Bounds | `mill_tonnage_forecast.png` |
-
----
-
-## 7. Business Impact & Optimization Metrics
+## 6. Business Impact & Optimization Metrics
 
 | Metric              | Description                           | Optimization Goal                    |
 | ------------------- | ------------------------------------- | ------------------------------------ |
 | Ore type proportion | % composition of Mixed/Oxide/Sulphide | Stable blending ratios               |
 | Mill throughput     | Tons processed per day                | Maximize without overloading         |
 | Energy consumption  | kWh per ton                           | Minimize via smoother feed           |
-| Recovery rate       | % of valuable metal extracted         | Increase via consistent feed quality |
-| Downtime            | Unplanned production halts            | Reduce variability impact            |
 
 ### Integration
 
@@ -216,7 +202,6 @@ It provides a framework for **data-driven decision-making** across the mine-to-m
 | Machine Learning  | scikit-learn          |
 | Time Series       | Facebook Prophet      |
 | Visualization     | Matplotlib, Seaborn   |
-| Deployment        | Streamlit, Power BI   |
 
 ---
 
@@ -224,5 +209,6 @@ It provides a framework for **data-driven decision-making** across the mine-to-m
 
 **Axel Ivanda Tanjung**
 *Data Scientist — Data Scientist*
+
 
 
